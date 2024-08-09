@@ -3,7 +3,7 @@ const { pathfinder, Movements, goals } = require('mineflayer-pathfinder');
 const { Vec3 } = require('vec3');
 const axios = require('axios');
 
-const WEBHOOK_URL = 'YOUR_DISCORD_WEBHOOK_URL_HERE'; // Discord Webhook URL'nizi buraya ekleyin  | En : Add your Discord Webhook URL here
+const WEBHOOK_URL = 'Discord.com'; // Discord Webhook URL'nizi buraya ekleyin  | En : Add your Discord Webhook URL here
 
 function sendWebhookMessage(message) {
   axios.post(WEBHOOK_URL, {
@@ -62,10 +62,10 @@ function checkCorner(bot, target) {
 
 function createBot() {
   const bot = mineflayer.createBot({
-    host: 'Server IP',    // Minecraft sunucusunun IP adresi
-    port: 40297,          // Tr : Minecraft sunucusunun portu (varsayılan: 25565)   |   En : Port of the Minecraft server (default: 25565)
-    username: 'ZambakExe',      // Tr : Botun kullanıcı adı   |   En : Bot's username
-    version: '1.18'       // Tr : Minecraft sunucu sürümü (En fazla 1.20 diğer versiyonlar "Via Version ile çalışır")  |   En : Minecraft server version (Up to 1.20 other versions work with "Via Version")
+    host: 'CoconutToiletSMP.aternos.me',    // Minecraft sunucusunun IP adresi
+    port: 28074,          // Tr : Minecraft sunucusunun portu (varsayılan: 25565)   |   En : Port of the Minecraft server (default: 25565)
+    username: 'Skibidi_Toilet',      // Tr : Botun kullanıcı adı   |   En : Bot's username
+    version: '1.21'       // Tr : Minecraft sunucu sürümü (En fazla 1.20 diğer versiyonlar "Via Version ile çalışır")  |   En : Minecraft server version (Up to 1.20 other versions work with "Via Version")
   });
 
   
